@@ -233,7 +233,7 @@ class PauseSubState extends MusicBeatSubstate
 				case "Restart Song":
 					restartSong();
                  case "Options":
-                       doTrace('nothing kids!');
+                       trace('nothing kids!');
 				case "Exit to menu":
 					PlayState.deathCounter = 0;
 					PlayState.seenCutscene = false;
