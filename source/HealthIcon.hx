@@ -113,3 +113,4 @@ class HealthIcon extends FlxSprite
 		return char;
 
 	}
+}
