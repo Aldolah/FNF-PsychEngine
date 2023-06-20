@@ -152,6 +152,8 @@ class CreditsState extends MusicBeatState
 
             ['Nopal', 'Nopal', 'Composer', 'https://youtube.com/@Nopaleditz_24', '2B65EC'],
 
+	    ['Rajiffa', 'Raji', 'Animators', 'idk', '00FF00'],
+
             ['AldoKull', 'Aldo', 'Coders And A COOL GUYS IN THE WORLD', 'https://youtube.com/@AldoKullDekFNF', '80080'],
 
 			['Psych Engine Android Team'],
