@@ -140,6 +140,11 @@ class OptionsState extends MusicBeatState
 
 		#end
 
+		if(!inGame)
+			options = ['Note Colors', 'Controls', 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI', 'Gameplay'];
+		else
+			options = ['Note Colors', 'Controls', 'Graphics', 'Visuals and UI', 'Gameplay'];
+
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 
 		bg.color = 0xFFea71fd;
@@ -248,8 +253,10 @@ class OptionsState extends MusicBeatState
 
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 
-			MusicBeatState.switchState(new MainMenuState());
-
+			if(!inGame)
+				MusicBeatState.switchState(new MainMenuState());
+			else
+				MusicBeatState.switchState(new PlayState());
 		}
 
 		#if android
