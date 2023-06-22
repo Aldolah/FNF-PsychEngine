@@ -232,8 +232,9 @@ class PauseSubState extends MusicBeatSubstate
 					regenMenu();
 				case "Restart Song":
 					restartSong();
-                 case "Options":
-                       trace('nothing kids!');
+                                case "Options":
+					options.OptionsState.inGame = true;
+					MusicBeatState.switchState(new options.OptionsState());
 				case "Exit to menu":
 					PlayState.deathCounter = 0;
 					PlayState.seenCutscene = false;
